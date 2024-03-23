@@ -1,0 +1,29 @@
+.auth-layouts .wrapper-logo {
+  width: 46px;
+  height: 42px;
+}
+
+.auth-layouts .text-logo {
+  color: #4338ca;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.container {
+  max-width: 540px;
+}
+
+.direct-auth {
+  text-decoration: none;
+}
+
+.direct-auth span {
+  color: #5c73db;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 767px) {
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+}

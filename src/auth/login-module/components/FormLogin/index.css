@@ -1,0 +1,19 @@
+.input-login {
+  border: 2px solid #5c73db;
+}
+
+.btn-login {
+  width: 100%;
+  background-color: #4763e4;
+  border: 2px solid #4763e4;
+  color: white;
+}
+
+.wrapper-arrow-icon {
+  width: 20px;
+  height: 10.52px;
+}
+
+.error-text {
+  font-size: 14px;
+}
