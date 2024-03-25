@@ -1,7 +1,12 @@
-import React from "react";
+import AllUsersPage from "@/dashboard/get-current-user-module/page/page";
+import React, { useEffect, useState } from "react";
 
 const Page = () => {
-  return <main>dashboard</main>;
+  return (
+    <>
+      <AllUsersPage />
+    </>
+  );
 };
 
 export default Page;

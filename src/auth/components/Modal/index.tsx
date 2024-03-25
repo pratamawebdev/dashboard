@@ -19,15 +19,14 @@ const Modal: FC<ModalProps> = ({ title, description, onClick }) => {
           </div>
 
           <div className="d-flex flex-column mt-5 row-gap-4 justify-content-center align-items-center">
-            <div className="wrapper-icon">
-              <Image
-                src={"/images/icon/success.svg"}
-                fill
-                alt="Success image"
-                className="object-fit-cover"
-                sizes="(max-width: 150px) 150px, 100px"
-              />
-            </div>
+            <Image
+              src={"/images/icon/success.svg"}
+              width={150}
+              height={150}
+              alt="Success image"
+              className="object-fit-cover"
+            />
+
             <div className="d-flex flex-column align-items-center wrapper-body">
               <h3 className="text-dark fw-bold">{title}</h3>
               <p>{description}</p>

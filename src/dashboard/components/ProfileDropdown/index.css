@@ -1,0 +1,26 @@
+.profile-image {
+  border: 2px solid gray;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.profile-dropdown {
+  padding: 16px;
+  right: 10px;
+  top: 24;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.profile-dropdown .menu {
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 8px;
+  color: black;
+}
+
+.profile-dropdown .menu:hover {
+  background-color: #4256d0;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}

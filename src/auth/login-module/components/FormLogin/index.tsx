@@ -23,7 +23,7 @@ const FormLogin = () => {
   const {
     register,
     handleSubmit,
-    formState: { errors },
+    formState: { errors, isDirty, isValid },
   } = useForm<z.infer<typeof loginFormSchema>>({
     resolver: zodResolver(loginFormSchema),
   });
@@ -34,8 +34,8 @@ const FormLogin = () => {
     setIsLoading(true);
     try {
       const response = await loginUser(data);
-      console.log(response);
       setError(null);
+      localStorage.setItem("token", response.token);
       setIsLoading(false);
       setSuccess({
         title: "You have successfully logged in",
@@ -99,7 +99,10 @@ const FormLogin = () => {
         </div>
         <button
           type="submit"
-          className="btn-login rounded-3 fs-6 fw-bold py-2 d-flex align-items-center justify-content-center column-gap-2"
+          disabled={!isDirty || !isValid}
+          className={` rounded-3 ${
+            isDirty && isValid ? "btn-login" : "disabled-btn-login"
+          } fs-6 fw-bold py-2 d-flex align-items-center justify-content-center column-gap-2`}
         >
           {isLoading ? (
             <Spinner />

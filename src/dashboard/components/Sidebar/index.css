@@ -1,0 +1,55 @@
+#sidebar {
+  max-width: 264px;
+  min-width: 264px;
+  background-image: url("/images/sidebar/bg-pattern.png");
+  background-color: #0e1b6b;
+  background-size: cover;
+  transition: all 0.35s ease-in-out;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.sidebar-nav {
+  list-style: none;
+  text-decoration: none;
+}
+
+.logo-sidebar {
+  background-color: #0e1b6b;
+  width: 100%;
+  border: none;
+  height: 64px;
+}
+
+.logo-sidebar .wrapper-logo {
+  width: 33px;
+  height: 30px;
+}
+
+.wrapper-icon {
+  width: 30px;
+  height: 30px;
+}
+
+/* @media screen and (max-width: 767px) {
+  .container-sidebar {
+    display: ;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+} */
+
+.path-item {
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+
+.path-item:hover {
+  background-color: #4256d0;
+  padding: 10px 30px;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}

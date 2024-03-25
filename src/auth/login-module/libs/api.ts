@@ -6,6 +6,7 @@ interface LoginForm {
 }
 
 interface LoginResponse {
+  token: string;
   accessToken: string;
 }
 

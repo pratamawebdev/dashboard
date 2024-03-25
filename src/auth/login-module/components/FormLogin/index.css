@@ -9,6 +9,13 @@
   color: white;
 }
 
+.disabled-btn-login {
+  width: 100%;
+  background-color: lightgray;
+  color: white;
+  border: 2px solid lightgray;
+}
+
 .wrapper-arrow-icon {
   width: 20px;
   height: 10.52px;
